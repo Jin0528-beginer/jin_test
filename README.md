@@ -3,6 +3,8 @@
 설문/의견 CSV를 업로드하면 문장을 embedding → clustering해서 Topic으로 자동 정리하고,
 자연어로 의견을 검색할 수 있는 Streamlit 앱입니다.
 
+**🌐 Live Demo:** _(Streamlit Community Cloud에 배포한 뒤, 여기에 발급된 URL을 넣어주세요. 아래 "배포하기" 참고)_
+
 ## 기능
 
 - CSV 업로드 + Topic 개수(k) 조절
@@ -20,14 +22,29 @@
 | `requirements.txt` | 의존 패키지 목록 |
 | `ai_insight_engine_youth_comments.csv` | 샘플 데이터 |
 
-## 실행 방법
+## 배포하기 (누구나 링크로 바로 열 수 있게)
+
+로컬 실행(`streamlit run`)은 명령어를 실행한 사람 자신의 컴퓨터에서만 열립니다. 설치 없이
+링크만으로 누구나 열어보게 하려면 아래처럼 실제로 배포해야 합니다. 이 앱은 외부 API
+키가 필요 없어서 별도 secrets 설정 없이 바로 배포할 수 있습니다.
+
+**Streamlit Community Cloud (무료)**
+
+1. 이 저장소를 GitHub public repo로 올립니다.
+2. [share.streamlit.io](https://share.streamlit.io)에 GitHub 계정으로 로그인합니다.
+3. "New app" → 이 저장소 선택 → Main file path에 `streamlit_app.py` 지정 → Deploy.
+4. 몇 분 뒤 `https://<앱이름>.streamlit.app` 형태의 공개 URL이 발급됩니다.
+5. 발급된 URL을 이 README 상단의 **Live Demo** 링크에 채워 넣습니다.
+
+## 로컬에서 직접 실행 (개발용)
 
 ```bash
 pip install -r requirements.txt
 streamlit run streamlit_app.py
 ```
 
-브라우저에서 `http://localhost:8501`이 자동으로 열립니다.
+브라우저에서 `http://localhost:8501`이 자동으로 열립니다. (이 방식은 실행한 사람의
+컴퓨터에서만 열리며, 다른 사람과 공유하려면 위 "배포하기"가 필요합니다.)
 
 ## 사용 방법
 
