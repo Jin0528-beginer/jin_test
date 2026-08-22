@@ -3,7 +3,7 @@
 설문/의견 CSV를 업로드하면 문장을 embedding → clustering해서 Topic으로 자동 정리하고,
 자연어로 의견을 검색할 수 있는 Streamlit 앱입니다.
 
-**🌐 Live Demo:** _(Streamlit Community Cloud에 배포한 뒤, 여기에 발급된 URL을 넣어주세요. 아래 "배포하기" 참고)_
+**🌐 Live Demo:** [jintest-k6565q89x6p93llgjhfy4c.streamlit.app](https://jintest-k6565q89x6p93llgjhfy4c.streamlit.app/)
 
 ## 기능
 
